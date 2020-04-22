@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>[第二周] 认识sql并学习数据库的基础操作 | 皮皮猪</title>
 <meta name="description" content="Well begun if half done" />
-<link rel="shortcut icon" href="https://blog.wpeter.com/favicon.ico?v=1587552166222">
+<link rel="shortcut icon" href="https://blog.wpeter.com/favicon.ico?v=1587554019357">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://blog.wpeter.com/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://blog.wpeter.com">
-  <img class="avatar" src="https://blog.wpeter.com/images/avatar.png?v=1587552166222" alt="">
+  <img class="avatar" src="https://blog.wpeter.com/images/avatar.png?v=1587554019357" alt="">
   </a>
   <h1 class="site-title">
     皮皮猪
@@ -86,10 +86,10 @@
                 2019-08-12
               </span>
               <span>
-                5 min read
+                15 min read
               </span>
               
-                <a href="https://blog.wpeter.com/tag/cakOQtGMz" class="post-tag">
+                <a href="https://blog.wpeter.com/tag/cakOQtGMz/" class="post-tag">
                   # 信安之路
                 </a>
               
@@ -111,7 +111,7 @@
 </ul>
 <h2 id="font-color0099330x01-关系型与非关系型数据库font"><font color=#009933>0x01 关系型与非关系型数据库</font></h2>
 <h3 id="11-关系型数据库">1.1 关系型数据库</h3>
-<p><img src="https://blog.wpeter.com/post-images/1565597417038.jpg" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="https://blog.wpeter.com/post-images/1565597417038.jpg" alt="" loading="lazy"></figure>
 <blockquote>
 <p>关系型数据库是以关系模型来创建的数据库。</p>
 <p>关系模型就是指二维表格模型。</p>
@@ -131,7 +131,7 @@
 <li>高并发读写需求，传统关系型数据库来说，硬盘I/O是一个很大的瓶颈。</li>
 </ol>
 <h3 id="12-非关系型数据库">1.2 非关系型数据库</h3>
-<p><img src="https://blog.wpeter.com/post-images/1565597439970.jpg" alt=""></p>
+<figure data-type="image" tabindex="2"><img src="https://blog.wpeter.com/post-images/1565597439970.jpg" alt="" loading="lazy"></figure>
 <blockquote>
 <p>非关系型数据库严格上不是一种数据库，应该是一种数据结构化存储方法的集合。</p>
 <p>非关系型数据库是以 非关系模型 来创建的数据库。</p>
@@ -154,13 +154,13 @@
 <h4 id="非关系型数据库的分类和比较">非关系型数据库的分类和比较：</h4>
 <ol>
 <li>文档型：<br>
-<img src="https://blog.wpeter.com/post-images/1565597453734.jpg" alt=""></li>
+<img src="https://blog.wpeter.com/post-images/1565597453734.jpg" alt="" loading="lazy"></li>
 <li>key-value型<br>
-<img src="https://blog.wpeter.com/post-images/1565597462628.jpg" alt=""></li>
+<img src="https://blog.wpeter.com/post-images/1565597462628.jpg" alt="" loading="lazy"></li>
 <li>列式数据库<br>
-<img src="https://blog.wpeter.com/post-images/1565597470133.jpg" alt=""></li>
+<img src="https://blog.wpeter.com/post-images/1565597470133.jpg" alt="" loading="lazy"></li>
 <li>图形数据库<br>
-<img src="https://blog.wpeter.com/post-images/1565597482514.jpg" alt=""></li>
+<img src="https://blog.wpeter.com/post-images/1565597482514.jpg" alt="" loading="lazy"></li>
 </ol>
 <h3 id="13-关系型与非关系型-区别">1.3 关系型与非关系型 区别</h3>
 <p><strong>1. 数据存储方式不同。</strong></p>
@@ -245,7 +245,7 @@
 值(value): 行的具体信息, 每个值必须与该列的数据类型相同;<br>
 键(key): 键的值在当前列中具有唯一性。</p>
 </blockquote>
-<p><img src="https://blog.wpeter.com/post-images/1565597564151.png" alt=""></p>
+<figure data-type="image" tabindex="3"><img src="https://blog.wpeter.com/post-images/1565597564151.png" alt="" loading="lazy"></figure>
 <h3 id="213-mysql数据类型">2.1.3 MySQL数据类型</h3>
 <p>MySQL中定义数据字段的类型对于数据库的优化是非常重要的。<br>
 MySQL支持多种类型，大致可以分为三类：数值、日期/时间和字符串(字符)类型。</p>
@@ -259,18 +259,18 @@ MySQL支持多种类型，大致可以分为三类：数值、日期/时间和�
 <p>作为SQL标准的扩展，MySQL也支持整数类型TINYINT、MEDIUMINT和BIGINT。下面的表显示了需要<br>
 的每个整数类型的存储和范围。</p>
 </blockquote>
-<p><img src="https://blog.wpeter.com/post-images/1565597612091.jpg" alt=""></p>
+<figure data-type="image" tabindex="4"><img src="https://blog.wpeter.com/post-images/1565597612091.jpg" alt="" loading="lazy"></figure>
 <p>​		<strong>2、日期/时间 数据类型</strong></p>
 <p>​     表示时间值的日期和时间类型为DATETIME、DATE、TIMESTAMP、TIME和YEAR。<br>
 ​     每个时间类型有一个有效值范围和一个&quot;零&quot;值，当指定不合法的MySQL不能表示的值时使用&quot;零&quot;值。<br>
 ​     TIMESTAMP类型有专有的自动更新特性，将在后面描述。</p>
-<p><img src="https://blog.wpeter.com/post-images/1565597621623.jpg" alt=""></p>
+<figure data-type="image" tabindex="5"><img src="https://blog.wpeter.com/post-images/1565597621623.jpg" alt="" loading="lazy"></figure>
 <p>​	<strong>3、浮点型</strong></p>
-<p><img src="https://blog.wpeter.com/post-images/1565597632818.jpg" alt=""></p>
+<figure data-type="image" tabindex="6"><img src="https://blog.wpeter.com/post-images/1565597632818.jpg" alt="" loading="lazy"></figure>
 <p>​	<strong>4、字符串类型</strong></p>
 <p>字符串类型指CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM和SET。</p>
 <p>该节描述了这些类型如何工作以及如何在查询中使用这些类型。</p>
-<p><img src="https://blog.wpeter.com/post-images/1565597645071.jpg" alt=""></p>
+<figure data-type="image" tabindex="7"><img src="https://blog.wpeter.com/post-images/1565597645071.jpg" alt="" loading="lazy"></figure>
 <p>​	<strong>常见字段类型事项：</strong></p>
 <ol>
 <li>char（n）和varchar（n）中括号中n代表字符的个数，并不代表字节个数，所以当使用了中文的<br>
@@ -288,15 +288,15 @@ MySQL支持多种类型，大致可以分为三类：数值、日期/时间和�
 <p>可以使用 MySQL 二进制方式进入到 MySQL 命令提示符下来进行连接 MySQL数据库。</p>
 <p>​	<strong>实例：</strong></p>
 <p><code>所用命令：mysql -uroot -p</code></p>
-<p><img src="https://blog.wpeter.com/post-images/1565597679633.png" alt=""></p>
+<figure data-type="image" tabindex="8"><img src="https://blog.wpeter.com/post-images/1565597679633.png" alt="" loading="lazy"></figure>
 <p>在登录成功后会出现 mysql&gt; 命令提示窗口，你可以在上面执行任何 SQL 语句。</p>
 <p>以上命令执行后，登录成功输出结果如下:</p>
-<p><img src="https://blog.wpeter.com/post-images/1565597697263.png" alt=""></p>
+<figure data-type="image" tabindex="9"><img src="https://blog.wpeter.com/post-images/1565597697263.png" alt="" loading="lazy"></figure>
 <p>退出 mysql&gt;  命令：</p>
 <pre><code>mysql&gt; exit
 Bye
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597715722.png" alt=""></p>
+<figure data-type="image" tabindex="10"><img src="https://blog.wpeter.com/post-images/1565597715722.png" alt="" loading="lazy"></figure>
 <h4 id="312-使用php-脚本连接-mysql">3.1.2 使用PHP 脚本连接 MySQL</h4>
 <p>PHP 提供了 mysqli_connect() 函数来连接数据库。</p>
 <p>该函数有 6 个参数，在成功链接到 MySQL 后返回连接标识，失败返回 FALSE 。</p>
@@ -304,7 +304,7 @@ Bye
 <pre><code>mysqli_connect(host,username,password,dbname,port,socket);
 </code></pre>
 <p>​	<strong>参数说明：</strong></p>
-<p><img src="https://blog.wpeter.com/post-images/1565597737637.png" alt=""></p>
+<figure data-type="image" tabindex="11"><img src="https://blog.wpeter.com/post-images/1565597737637.png" alt="" loading="lazy"></figure>
 <p>你可以使用 PHP 的 mysqli_close() 函数来断开与 MySQL 数据库的链接。</p>
 <p>该函数只有一个参数为 mysqli_connect() 函数创建连接成功后返回的 MySQL 连接标识符。</p>
 <p>​	<strong>语法：</strong></p>
@@ -315,7 +315,7 @@ Bye
 <p><strong>实例：</strong></p>
 <p>连接 MySQL 服务器:</p>
 <p>在网站根目录下创建 mysqli_connect.php 实例文件</p>
-<p><img src="https://blog.wpeter.com/post-images/1565597756160.png" alt=""></p>
+<figure data-type="image" tabindex="12"><img src="https://blog.wpeter.com/post-images/1565597756160.png" alt="" loading="lazy"></figure>
 <p>mysqli_connect.php 实例文件内容：</p>
 <pre><code>&lt;?php
 $dbhost = 'localhost';  // mysql服务器主机地址
@@ -330,27 +330,27 @@ echo '数据库连接成功！';
 mysqli_close($conn);
 ?&gt;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597776529.png" alt=""></p>
+<figure data-type="image" tabindex="13"><img src="https://blog.wpeter.com/post-images/1565597776529.png" alt="" loading="lazy"></figure>
 <h3 id="32-数据库的基本操作">3.2 数据库的基本操作</h3>
 <h4 id="321-创建数据库">3.2.1 创建数据库</h4>
 <pre><code>show databases;		查看数据库
 use wpeter;			使用 wpeter 数据库
 create database 数据库名；	创建数据库
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597794306.png" alt=""></p>
+<figure data-type="image" tabindex="14"><img src="https://blog.wpeter.com/post-images/1565597794306.png" alt="" loading="lazy"></figure>
 <h4 id="322-删除数据库">3.2.2 删除数据库</h4>
 <p><strong>drop 命令删除数据库：</strong></p>
 <pre><code>drop database 数据库名;		drop 命令删除数据库
 例如：drop database wpeter;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597811348.png" alt=""></p>
+<figure data-type="image" tabindex="15"><img src="https://blog.wpeter.com/post-images/1565597811348.png" alt="" loading="lazy"></figure>
 <p><strong>使用 mysqladmin 删除数据库：</strong></p>
 <p>使用 mysql  <strong><code>mysqladmin</code></strong>  命令在 终端 来执行删除命令</p>
 <pre><code>[root@bogon wpeter]# mysqladmin -u root -p drop wpeter
 Enter password: 
 </code></pre>
 <p>执行以上删除数据库命令后，会出现一个提示框，来确认是否真的删除数据库：</p>
-<p><img src="https://blog.wpeter.com/post-images/1565597828390.png" alt=""></p>
+<figure data-type="image" tabindex="16"><img src="https://blog.wpeter.com/post-images/1565597828390.png" alt="" loading="lazy"></figure>
 <h3 id="33-数据表的基本操作">3.3 数据表的基本操作</h3>
 <pre><code>创建表：
 create table 表名 (
@@ -394,12 +394,12 @@ remark VARCHAR(50),
 PRIMARY KEY (id)
 )ENGINE=InnoDB default CHARSET=utf8;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597870722.png" alt=""></p>
+<figure data-type="image" tabindex="17"><img src="https://blog.wpeter.com/post-images/1565597870722.png" alt="" loading="lazy"></figure>
 <p>读取数据表：</p>
 <pre><code>desc 表名
 show column from 表名
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597883290.png" alt=""></p>
+<figure data-type="image" tabindex="18"><img src="https://blog.wpeter.com/post-images/1565597883290.png" alt="" loading="lazy"></figure>
 <p><strong>实例解析：</strong></p>
 <blockquote>
 <ul>
@@ -425,7 +425,7 @@ ALTER TABLE workers DROP remark;		#删除remark列
 ALTER TABLE workers CHANGE COLUMN name username VARCHAR(20);	#修改name为username
 </code></pre>
 <p><strong>操作成功：</strong></p>
-<p><img src="https://blog.wpeter.com/post-images/1565597899461.png" alt=""></p>
+<figure data-type="image" tabindex="19"><img src="https://blog.wpeter.com/post-images/1565597899461.png" alt="" loading="lazy"></figure>
 <h4 id="333-数据表的增删改查">3.3.3 数据表的增删改查</h4>
 <p><strong>插入数据：</strong></p>
 <pre><code>INSERT INTO workers VALUES(1,'张三','男','1930-11-20','123@qq.com',22);
@@ -437,27 +437,27 @@ INSERT INTO workers VALUES(5,'如花','女','1980-9-21','223223@qq.com',33);
 <p><strong>查看表单所有数据：</strong></p>
 <pre><code>SELECT * FROM workers;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597915489.png" alt=""></p>
+<figure data-type="image" tabindex="20"><img src="https://blog.wpeter.com/post-images/1565597915489.png" alt="" loading="lazy"></figure>
 <p><strong>查看表单中的id、username、email、age数据：</strong></p>
 <pre><code>SELECT id,username,email,age FROM workers;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597930932.png" alt=""></p>
+<figure data-type="image" tabindex="21"><img src="https://blog.wpeter.com/post-images/1565597930932.png" alt="" loading="lazy"></figure>
 <p><strong>将 如花 的性别改为男：</strong></p>
 <pre><code>UPDATE workers SET gender = '男' WHERE id = 5;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597944129.png" alt=""></p>
+<figure data-type="image" tabindex="22"><img src="https://blog.wpeter.com/post-images/1565597944129.png" alt="" loading="lazy"></figure>
 <p><strong>删除 张花 的年龄为23 那一行：</strong></p>
 <pre><code>DELNET FROM workers WHERE age = 23;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597955983.png" alt=""></p>
+<figure data-type="image" tabindex="23"><img src="https://blog.wpeter.com/post-images/1565597955983.png" alt="" loading="lazy"></figure>
 <p><strong>将张三的年龄也设置为33：</strong></p>
 <pre><code>UPDATE workers SET age = 33 WHERE id = 1;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597967418.png" alt=""></p>
+<figure data-type="image" tabindex="24"><img src="https://blog.wpeter.com/post-images/1565597967418.png" alt="" loading="lazy"></figure>
 <p><strong>将李四改为李四（如花的亲戚），性别女，email为：8888@139.com ：</strong></p>
 <pre><code>UPDATE workers SET username = '李四（如花的亲戚）',gender = '女',email = '8888@139.com' WHERE id = 3;
 </code></pre>
-<p><img src="https://blog.wpeter.com/post-images/1565597979933.png" alt=""></p>
+<figure data-type="image" tabindex="25"><img src="https://blog.wpeter.com/post-images/1565597979933.png" alt="" loading="lazy"></figure>
 
               </div>
               <div class="toc-container">
@@ -519,7 +519,7 @@ INSERT INTO workers VALUES(5,'如花','女','1980-9-21','223223@qq.com',33);
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://blog.wpeter.com/post/lessfont-color009933-greaterli-yong-github-he-gridea-da-jian-ge-ren-bo-ke-lessfontgreater">
+            <a href="https://blog.wpeter.com/post/lessfont-color009933-greaterli-yong-github-he-gridea-da-jian-ge-ren-bo-ke-lessfontgreater/">
               <h3 class="post-title">
                 利用GitHub和Gridea搭建个人博客
               </h3>
