@@ -1,0 +1,253 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>利用GitHub和Gridea搭建个人博客 | 皮皮猪</title>
+<meta name="description" content="Well begun if half done" />
+<link rel="shortcut icon" href="https://blog.wpeter.com/favicon.ico?v=1587572707165">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://blog.wpeter.com/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+<!-- do not set the version number -->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<!-- or set latest -->
+<script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<!-- or Default value -->
+<script src="//unpkg.com/valine"></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://blog.wpeter.com">
+  <img class="avatar" src="https://blog.wpeter.com/images/avatar.png?v=1587572707165" alt="">
+  </a>
+  <h1 class="site-title">
+    皮皮猪
+  </h1>
+  <p class="site-description">
+    Well begun if half done
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/categories" class="menu">
+          分类
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              利用GitHub和Gridea搭建个人博客
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-08-07
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://blog.wpeter.com/h2xSkAmak/" class="post-tag">
+                  # 搭建博客
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="font-color0099330x00-引言font"><font color=#009933>0x00 引言</font></h2>
+<p>使用GitHub pages服务器搭建博客的好处：</p>
+<blockquote>
+<ol>
+<li>全是静态文件，访问速度快；</li>
+<li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器，不需要后台；</li>
+<li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于GitHub的；</li>
+<li>数据绝对安全，基于GitHub的版本管理，想恢复到哪个历史版本都可以；</li>
+<li>博客内容可以轻松打包、转移、发布到其他平台。</li>
+</ol>
+</blockquote>
+<h2 id="font-color0099330x01-准备工作font"><font color=#009933>0x01 准备工作</font></h2>
+<ul>
+<li>有一个<a href="https://github.com/">GitHub账号</a>，没有的话去注册一个；</li>
+<li>安装了 <a href="https://git-scm.com/download/">git for Windows</a>（或者其他git客户端）</li>
+<li>安装了 <a href="https://gridea.dev/">Gridea 客户端</a></li>
+</ul>
+<h2 id="font-color0099330x02-github创建个人仓库font"><font color=#009933>0x02 GitHub创建个人仓库</font></h2>
+<p>1、 新建一个GitHub仓库，命令规则为 <code>你的用户名.github.io</code>（必须是你的用户名，其他名称无效），比如我的用户名是 <code>W-Peter</code>，那么就新建 <code>W-Peter.github.io</code> 的仓库，将来我的博客访问地址就是  <a href="https://W-Peter.gitub.io">https://W-Peter.gitub.io</a></p>
+<p><img src="https://blog.wpeter.com/post-images/1565111713766.png" alt="" loading="lazy"><br>
+<img src="https://blog.wpeter.com/post-images/1565111720194.jpg" alt="" loading="lazy"></p>
+<h2 id="font-color0099330x03-安装-gitfont"><font color=#009933>0x03 安装 Git</font></h2>
+<p>从 Git 官网<a href="https://git-scm.com/downloads">下载 Git</a>，下载安装后在命令行里输入 <code>git --version</code> 测试是否安装成功。</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.wpeter.com/post-images/1565111741150.jpg" alt="" loading="lazy"></figure>
+<h2 id="font-color0099330x04-安装-grideafont"><font color=#009933>0x04 安装 Gridea</font></h2>
+<p>从 Gridea 官网 <a href="https://gridea.dev/">下载Grande</a>，下载之后，一路默认安装即可。</p>
+<h2 id="font-color0099330x05-获取github-tokenfont"><font color=#009933>0x05 获取GitHub Token</font></h2>
+<p>前面步骤已经注册过GitHub账号，登录GitHub，然后进入到 <a href="https://github.com/settings/tokens/new"><strong>这里</strong></a>创建一个 <strong>Token</strong>，勾选上 <strong>repo</strong>的相关选项即可，下面是对应的截图<br>
+示例：<br>
+<img src="https://blog.wpeter.com/post-images/1565111789827.jpg" alt="" loading="lazy"></p>
+<p>生成之后你可以复制 <strong>Token</strong>到你可以再次找到的某个地方，因为一旦你关了这个网页就再也不会看到它了，这个 <strong>Token</strong>会在<strong>Gridea</strong>软件中使用<br>
+<img src="https://blog.wpeter.com/post-images/1565111782061.jpg" alt="" loading="lazy"></p>
+<h2 id="font-color0099330x06-配置gridea搭建博客font"><font color=#009933>0x06 配置Gridea，搭建博客</font></h2>
+<ol>
+<li>打开<strong>Gridea</strong>进入到配置页面，然后按照下面示例，输入相关配置并保存<br>
+<img src="https://blog.wpeter.com/post-images/1565111824701.jpg" alt="" loading="lazy"></li>
+</ol>
+<p>在不开启文章评论的情况下，到此为止，你可以点击预览，点击同步进行博客部署了。</p>
+<h2 id="font-color0099330x07-开启文章评论font"><font color=#009933>0x07 开启文章评论</font></h2>
+<p><strong>Gridea</strong>目前提供了 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk</a> 和 <a href="https://fehey.com/post/hve-notes-start/">Disqus</a> 两种评论系统支持。</p>
+<blockquote>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。如果你博客使用的是 Gitalk 的话，建议你可以选择 Gitalk 来作为评论插件。</p>
+</blockquote>
+<p>你可以按照 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk 的文档</a> 进行相关字段配置，或者按照下面的步骤操作。</p>
+<p>首先你需要有一个 <strong>Github OAuth Application</strong>，点击 <a href="https://github.com/settings/applications/new"><strong>这里</strong></a> 创建，字段填写可以参照下图<br>
+<img src="https://blog.wpeter.com/post-images/1565111878448.jpg" alt="" loading="lazy"></p>
+<p>创建完成之后可将 <strong>Client ID</strong> 和 <strong>Client Secret</strong> 复制一下，保存到本地。<br>
+<img src="https://blog.wpeter.com/post-images/1565111904545.jpg" alt="" loading="lazy"></p>
+<p>接下来就可以去应用里面填写对应的信息，并开启评论<br>
+<img src="https://blog.wpeter.com/post-images/1565111915713.jpg" alt="" loading="lazy"></p>
+<p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 <strong>Github OAuth</strong> 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
+<h2 id="font-color009933参考font"><font color=#009933>参考</font></h2>
+<ol>
+<li><a href="https://wayxz.github.io/2019/08/05/%E5%88%A9%E7%94%A8github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#0x06-%E6%8E%A8%E9%80%81%E7%BD%91%E7%AB%99%E5%88%B0github">利用github和hexo搭建个人博客</a></li>
+<li><a href="https://fehey.com/post/hve-notes-start/">Gridea 小白上手教程</a></li>
+</ol>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#font-color0099330x00-%E5%BC%95%E8%A8%80font"><font color=#009933>0x00 引言</font></a></li>
+<li><a href="#font-color0099330x01-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9Cfont"><font color=#009933>0x01 准备工作</font></a></li>
+<li><a href="#font-color0099330x02-github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93font"><font color=#009933>0x02 GitHub创建个人仓库</font></a></li>
+<li><a href="#font-color0099330x03-%E5%AE%89%E8%A3%85-gitfont"><font color=#009933>0x03 安装 Git</font></a></li>
+<li><a href="#font-color0099330x04-%E5%AE%89%E8%A3%85-grideafont"><font color=#009933>0x04 安装 Gridea</font></a></li>
+<li><a href="#font-color0099330x05-%E8%8E%B7%E5%8F%96github-tokenfont"><font color=#009933>0x05 获取GitHub Token</font></a></li>
+<li><a href="#font-color0099330x06-%E9%85%8D%E7%BD%AEgridea%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2font"><font color=#009933>0x06 配置Gridea，搭建博客</font></a></li>
+<li><a href="#font-color0099330x07-%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BAfont"><font color=#009933>0x07 开启文章评论</font></a></li>
+<li><a href="#font-color009933%E5%8F%82%E8%80%83font"><font color=#009933>参考</font></a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        <div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'H9f0ARAtL0mfBr4qKtUyl5HA-gzGzoHsz',
+        appKey: 'ArHVpPTDeFiGJtPs0GBCx1oj',
+        notify:false, 
+        verify:false, 
+        avatar:'mp', 
+        placeholder: 'gogo',
+    });
+</script> 
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/W-Peter" target="_blank">皮皮猪</a> | 
+  <a class="rss" href="https://blog.wpeter.com/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
