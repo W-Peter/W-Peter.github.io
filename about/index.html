@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>关于 | 皮皮猪</title>
 <meta name="description" content="Well begun if half done" />
-<link rel="shortcut icon" href="https://blog.wpeter.com/favicon.ico?v=1616553852401">
+<link rel="shortcut icon" href="https://blog.wpeter.com/favicon.ico?v=1616566688962">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://blog.wpeter.com/styles/main.css">
@@ -14,8 +14,8 @@
 
 
 
-<script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
 
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
   </head>
   <body>
@@ -23,7 +23,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://blog.wpeter.com">
-  <img class="avatar" src="https://blog.wpeter.com/images/avatar.png?v=1616553852401" alt="">
+  <img class="avatar" src="https://blog.wpeter.com/images/avatar.png?v=1616566688962" alt="">
   </a>
   <h1 class="site-title">
     皮皮猪
@@ -178,8 +178,34 @@
       </div>
     </div>
 	
+	<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'H9f0ARAtL0mfBr4qKtUyl5HA-gzGzoHsz',
+            appKey: 'ArHVpPTDeFiGJtPs0GBCx1oj'
+        })
+    </script>
 	
-	
+	<!--载入js，在</body>之前插入即可-->
+    <!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库-->
+    <script src="/media/scripts/Valine.min.js"></script>
+<div class="comment"></div>
+<script>
+    new Valine({
+        // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+        av: AV, 
+        el: '.comment',
+	      lang: 'zh-cn',//设置评论语言
+        emoticon_url: 'https://cloud.panjunwen.com/alu',
+  emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+  app_id: 'H9f0ARAtL0mfBr4qKtUyl5HA-gzGzoHsz',
+  app_key: 'ArHVpPTDeFiGJtPs0GBCx1oj',
+  placeholder: '评论留言'
+    });
+</script> 
 	
   </body>
 </html>
