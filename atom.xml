@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.wpeter.com</id>
     <title>皮皮猪</title>
-    <updated>2020-04-22T18:43:58.572Z</updated>
+    <updated>2021-03-24T02:45:14.445Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.wpeter.com"/>
     <link rel="self" href="https://blog.wpeter.com/atom.xml"/>
     <subtitle>Well begun if half done</subtitle>
     <logo>https://blog.wpeter.com/images/avatar.png</logo>
     <icon>https://blog.wpeter.com/favicon.ico</icon>
-    <rights>All rights reserved 2020, 皮皮猪</rights>
+    <rights>All rights reserved 2021, 皮皮猪</rights>
     <entry>
         <title type="html"><![CDATA[[第二周] 认识sql并学习数据库的基础操作]]></title>
         <id>https://blog.wpeter.com/di-er-zhou-ren-shi-sql-bing-xue-xi-shu-ju-ku-de-ji-chu-cao-zuo/</id>
